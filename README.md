@@ -1,5 +1,7 @@
 educationProjects
 ======
+> ### 교육과정에 있는 여러 지식들을 확인 또는 응용해보자.
+
 |번호|활동|날짜|
 |---|---|---|
 |1|[이항분포를 원 그래프로 확인해보자.](https://github.com/khhandrea/educationProjects/blob/master/binomial.ipynb "github")|2020-03-05|
