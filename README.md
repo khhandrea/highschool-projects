@@ -1,7 +1,7 @@
 # Highschool projects
 ## Projectile motion
 - 각도와 속력에 따른 공 중력 시뮬레이션
-![program screenshot]()
+![program screenshot](./projectile-motion/capture.PNG)
 - 30도, 45도, 60도로 투사체를 던졌을 때의 자취를 표시한다.
 - 예상: 30도와 60도의 수평 이동거리가 같고, 45도가 가장 멀리 날아간다.
 - 결과: 30도와 60도의 수평 이동거리가 비슷하고, 45도가 가장 멀리 날아간다.
