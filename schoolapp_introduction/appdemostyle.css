@@ -1,0 +1,35 @@
+@font-face {
+    font-family: NanumSquare;
+    src: local("NanumSquare"),
+        url("Font/NanumSquareR.woff");
+}
+* {
+    font-family: NanumSquare;
+    text-align: center;
+}
+.FieldCardBtn:hover {cursor: pointer;}
+body {
+    background-color: #3498db;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 28px;
+    color: white
+}
+#demobutton {
+    background-color: white;
+    outline: none;
+    border: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    color: #3498db;
+    font-size: 24px;
+    margin-top: 0px;
+}

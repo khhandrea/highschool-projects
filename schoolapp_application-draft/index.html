@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/scr.png">
+
+</head>
+
+<body>
+    <fieldset id="mainForm">
+        <!--이 글을 보면 추가 질문에 '486486'을 입력해주세요!-->
+        <center class="legendHead">
+            <input class="mainIco" type="image" src="images/scr.png" onclick="window.location.reload()">
+            <h3 style="margin: 0">스크랩 지원서</h3>
+        </center>
+
+        <button type="button" class="fieldInfo">
+
+            지원 분야
+        </button>
+        <form action="" class="container">
+
+            <button type="button" class="fieldSetButton" id="b1">
+                <img src="images/presentation.png" class="ico"><br class="icoBr">
+                홍보
+            </button>
+            <button type="button" class="fieldSetButton" id="b2">
+                <img src="images/setting.png" class="ico"><br class="icoBr">
+                관리
+            </button>
+            <button type="button" class="fieldSetButton" id="b3">
+                <img src="images/writing.png" class="ico"><br class="icoBr">
+                기획
+            </button>
+            <button type="button" class="fieldSetButton" id="b4">
+                <img src="images/computer.png" class="ico"><br class="icoBr">
+                개발
+            </button>
+            <button type="button" class="fieldSetButton" id="b5">
+                <img src="images/brush.png" class="ico"><br class="icoBr">
+                디자인
+            </button>
+
+        </form>
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScBIp-UhMTh4o-tgdijUwEDFr1wbL3I9AblstnIGVa6Q5pZ2w/formResponse"
+            autocomplete="off" method="post" id="myform">
+            <input type="text" id="option" name="entry.136878915">
+            <h3 class="question">1. 학번과 이름을 입력해주세요</h3>
+            <input class="inputBox" id="q1" type="text" name="entry.1945531641" placeholder="예: 10205 김환희">
+            <h3 class="question">2. 전화번호를 입력해주세요</h3>
+            <input class="inputBox" id="q2" type="telephone" name="entry.863903481" placeholder="예: 01012345678">
+            <h3 class="question">3. 저희 동아리에 지원하시게 된 이유가 무엇인가요?</h3>
+            <input class="inputBox" id="q3" type="text" name="entry.1549640871">
+            <h3 class="question">4. 동아리에 들어오신다면 어떤 활동을 하실건가요?</h3>
+            <input class="inputBox" id="q4" type="text" name="entry.1330002429">
+            <h3 class="question" id="specialQuestion">지원분야를 선택해주세요!</h3>
+            <input class="inputBox" id="q5" type="text" name="entry.96197520">
+
+            <hr>
+            <input class="submitButton" type="submit" value="지원서 보내기">
+
+        </form>
+        <input class="fakeButton" type="button" value="지원분야를 선택해주세요!">
+        <div class="blank"></div>
+    </fieldset>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

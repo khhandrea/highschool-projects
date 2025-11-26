@@ -1,0 +1,195 @@
+
+#mainForm {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.legendHead {
+    font-size: 24px;
+}
+
+.mainIco {
+    height: 45px;
+    width: 75px;
+}
+
+.fieldInfo {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    font-size: 24px;
+    border-color: black;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    height: 64px;
+}
+
+#option {
+    display: none;
+}
+
+@keyframes selectButtonAnim {
+    20% {
+        background-color: #ff7777;
+    }
+
+    80% {
+        background-color: white;
+    }
+}
+
+.fieldSetButton {
+    background-color: white;
+    /*border: none;*/
+    border-color: darkgray;
+    /*margin: 0 auto;*/
+    color: black;
+    /*padding: 12px auto;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-grow: 1;
+    transition: all 0.2s;
+    animation: selectButtonAnim 1.5s;
+}
+
+.ico {
+    display: inline;
+    height: 24px;
+    width: 24px;
+    transition: all 0.2s;
+}
+
+.fieldSetButton:hover {
+    background-color: lightgray;
+    font-size: 25px;
+}
+
+.fieldSetButton:hover .ico {
+    height: 32px;
+    width: 32px;
+}
+
+.fieldSelected {
+    background-color: darkgray;
+    font-size: 25px;
+}
+
+.fieldSelectedIco {
+    height: 32px;
+    width: 32px;
+}
+
+.icoBr {
+    display: none;
+}
+
+.question {
+    text-align: left;
+}
+
+#q1, #q2 {
+    max-width: 256px;
+    height: 32px;
+}
+
+#q3, #q4, #q5 {
+    width: 100%;
+    height: 128px;
+}
+
+.submitButton, .fakeButton {
+    background-color: lightgray;
+    /*border: none;*/
+    border-color: darkgray;
+    margin: 0 auto;
+    color: black;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submitButton:hover {
+    background-color: darkgray;
+}
+
+.fakeButton:hover {
+    background-color: #ff7777;
+}
+
+.blank {
+    margin: 0;
+    color: red;
+}
+
+/***************************************************/
+
+@media (max-width: 1080px) {
+    #mainForm {
+        width: 90%;
+    }
+
+    .fieldInfo {
+        display: none;
+    }
+    
+    .container {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 76px;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .fieldSetButton {
+        border-color: white;
+        border-top-color: black;
+        font-size: 16px;
+    }
+
+    .fieldSetButton:hover {
+        background-color: darkgray;
+        font-size: 25px;
+    }
+    
+    .ico { /*not animated*/
+        display: inline;
+        height: 24px;
+        width: 24px;
+    }
+
+    .fieldSelected {
+        background-color: darkgray;
+        font-size: 25px;
+    }
+    
+    .fieldSelectedIco {
+        height: 32px;
+        width: 32px;
+    }
+
+    .icoBr {
+        display: inline;
+    }
+
+    .blank {
+         margin: 72px auto;
+    }
+
+    .submitButton, .fakeButton {
+        width: 100%;
+    }
+
+    .fakeButton:hover { /*not animated*/
+        background-color: lightgray;
+    }
+}

@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
+    <title>스크랩 동아리 지원서</title>
+    <meta property="og:url" content="https://bjschoolapp.com/app.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="스크랩 동아리 지원서" />
+    <meta property="og:description" content="보정고 유일 자체 앱 제작 동아리 '스크랩'에 지원하세요" />
+</head>
+
+<body>
+    <div class="mainBody">
+
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScBIp-UhMTh4o-tgdijUwEDFr1wbL3I9AblstnIGVa6Q5pZ2w/formResponse"
+            autocomplete="off" class="myForm">
+
+            <div class="sltBox s1">
+                <div class="rectCase">
+                    <h1 class="headScr">스크랩</h1>
+                    <h3 class="headApp">지원서</h3>
+                </div>
+                <div class="sltBoxHidden" id="inform">
+                    질문을 클릭하고 답변에 응해주세요 <br>
+                    모든 질문에 답할경우 제출버튼이 생성됩니다 <br><br>
+                    <input type="button" id="goMain" value="스크랩 설명서 바로가기">
+                </div>
+            </div>
+
+
+            <div class="sltBox s2">
+                <div class="rectCase">
+                    <h1 class="headScr"> Q1.</h1>
+                    <h3 class="headApp">인적사항</h3>
+                </div>
+                <div class="sltBoxHidden">
+                    <div class="finputBoxContainer">
+                        <div class="fInputDiv">　　학번　</div>
+
+                        <input class="fInputBox" id="f1" type="tel" name="entry.1945531641">
+                    </div>
+                    <div class="finputBoxContainer">
+                        <div class="fInputDiv">　　이름　</div>
+
+                        <input class="fInputBox" id="f2" type="text" name="entry.1480784284">
+                    </div>
+                    <div class="finputBoxContainer">
+
+                        <div class="finputDiv">전화번호　</div>
+                        <input class="fInputBox" id="f3" type="tel" name="entry.863903481">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sltBox s3">
+                <div class="rectCase">
+                    <h1 class="headScr"> Q2.</h1>
+                    <h3 class="headApp">지원동기가 무엇인가요</h3>
+                </div>
+                <div class="sltBoxHidden">
+                    본인의 진로, 특기, 경험 등을 써주세요
+                    <div class="inputBoxContainer">
+                        <textarea name="entry.1549640871" class="inputBox" id="f4" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sltBox s4">
+                <div class="rectCase">
+                    <h1 class="headScr"> Q3.</h1>
+                    <h3 class="headApp">지원 분야를 선택해주세요</h3>
+                </div>
+                <div class="sltBoxHidden">
+
+                    <div class="container">
+
+                        <button type="button" class="fieldSetButton" id="b1">
+                            홍보
+                        </button>
+
+                        <button type="button" class="fieldSetButton" id="b2">
+                            관리
+                        </button>
+
+                        <button type="button" class="fieldSetButton" id="b3">
+                            기획
+                        </button>
+
+                        <button type="button" class="fieldSetButton" id="b4">
+                            개발
+                        </button>
+
+                        <button type="button" class="fieldSetButton" id="b5">
+                            UIUX
+                        </button>
+
+
+                        <button type="button" class="fieldSetButton" id="b6">
+                            포스터
+                        </button>
+
+                    </div>
+                    <input type="text" id="fieldInput" name="entry.136878915">
+                    <div id="fieldInfo">
+                        마지막에 보낸 지원서만 유효합니다
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sltBox s5">
+                <div class="rectCase">
+                    <h1 class="headScr"> Q4.</h1>
+                    <h3 class="headApp specialQ">Q3을 먼저 답해주세요.</h3>
+                </div>
+                <div class="sltBoxHidden">
+                    <div class="inputBoxContainer">
+                        <textarea name="entry.96197520" class="inputBox" id="f6" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" class="submitBtn" value="제출하기">
+
+        </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+    <script src="application.js"></script>
+
+</body>
+
+</html>

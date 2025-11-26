@@ -1,0 +1,6 @@
+# OS
+.DS_Store
+
+# DB
+sample.csv
+serviceAccount.json

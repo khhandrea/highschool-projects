@@ -1,0 +1,271 @@
+@font-face {
+    font-family: NanumSquare;
+    src: local("NanumSquare"),
+        url("font/NanumSquareR.woff");
+}
+
+/***************** max width 800px *****************/
+body {
+    margin: 0 auto;
+}
+
+body * {
+    font-family: NanumSquare;
+    letter-spacing: 0px;
+}
+
+.mainBody {
+    padding: 0px;
+    margin: 0 0;
+    border-color: 1px solid black;
+    color: #333333;
+    width: 100vw;
+}
+
+.mainBody * {
+    transition: all 0.2s;
+}
+
+.mainBody *:focus {
+    outline: none;
+}
+
+.mobBr {
+    display: none;
+}
+
+#goMain {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#goMain:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+input {
+    height: 32px;
+}
+
+.sltBox {
+    padding: 10px calc((100vw - 800px)/2);
+    margin: 0 0 12px;
+}
+
+.hov {
+    background-color: #c8d6e5;
+}
+
+.slt {
+    background-color: #c8d6e5;
+}
+
+.sltBoxHidden {
+    display: none;
+    padding: 21px 0px;
+    font-size: 16px;
+    font-weight: 450;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: calc(-1*((100vw - 800px)/2));
+}
+
+.headScr {
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.headApp {
+    display: inline;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#inform {
+    line-height: 28px;
+    font-size: 22px;
+}
+
+.finputBoxContainer {
+    margin: 0;
+    padding: 10px 0; 
+    position: relative;
+    width: 100vw;
+}
+
+.inputBoxContainer {
+    margin: 20px 0 0;
+    padding: 0; 
+    position: relative;
+    width: 100vw;
+    background: white;
+}
+
+.inputBox {
+    border: none;
+    background-color:  white;
+    width: 800px;
+    resize: none;
+    font-size: 18px;
+}
+
+.fInputBox {
+    border: none;
+    background-color:  #c8d6e5;
+    vertical-align: center;
+    font-size: 18px;
+}
+
+.fInputDiv {
+    display: inline;
+    position: relative;
+}
+.closing {
+    background-color: white;
+}
+
+.inputBoxSlt {
+    background-color: white;
+    border: none;
+}
+
+.container {
+    display: inline;
+    background-color: white;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.fieldSetButton {
+    background-color: white;
+    border: none;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 400;
+    width: 180px;
+    height: 48px;
+}
+
+.fieldSetButton:hover {
+    background-color: lightgray;
+}
+
+.fieldSlt {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#fieldInput {
+    display: none;
+}
+
+#fieldInfo {
+    padding: 24px 0px 0px 0px;
+}
+
+@keyframes selectButtonAnim {
+    20% {
+        background-color: #c8d6e5;
+    }
+
+    80% {
+        background-color: white;
+    }
+}
+
+.submitBtn {
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    width: 192px;
+    height: 64px;
+    border-radius: 32px;
+    margin: 8px calc((100vw - 128px)/2);
+    animation: selectButtonAnim 1.5s;
+}
+
+.submitBtn:hover {
+    background-color: rgba(205, 212, 217, 0.6);
+}
+
+@media (max-width: 1080px) {
+
+    body * {
+        font-family: NanumSquare;
+        letter-spacing: 0px;
+    }
+
+    /*********** max width px ************/
+    .mobBr {
+        display: block;
+    }
+    .sltBox {
+        padding: 16px calc((100vw - 95vw)/2);
+    }
+
+    #inform {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .headScr {
+        font-size: 28px;
+    }
+    .headApp {
+        font-size: 20px;
+        margin-left: 4px;
+    }
+    .fieldInfo {
+        font-size: 12px;
+    }
+    .sltBoxHidden {
+        left: calc(-1*((100vw - 95vw)/2));
+    }
+
+    .inputBox {
+        width: 90vw;
+        font-size: 12px;
+    }
+    .fInputBox {
+        font-size: 12px;
+    }
+    .fieldSetButton {
+        font-size: 16px;
+        width: calc(100vw / 5);
+        height: 52px;
+    }
+
+    .fieldSetButton:hover {
+        background-color: white;
+    }
+
+    .fieldSlt {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .submitBtn {
+        font-size: 24px;
+        width: 90vw;
+        height: 64px;
+        border-radius: 48px;
+        margin: 8px calc((100vw - 95vw)/2);
+    }
+    
+    .submitBtn:hover {
+        background-color: white;
+    }
+}

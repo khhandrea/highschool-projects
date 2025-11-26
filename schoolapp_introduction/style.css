@@ -1,0 +1,169 @@
+@font-face {
+    font-family: NanumSquare;
+    src: local("NanumSquare"),
+        url("Font/NanumSquareR.woff");
+}
+* {
+    font-family: NanumSquare;
+    text-align: center;
+}
+.FieldCardBtn:hover {cursor: pointer;}
+#SupportBtn:hover {cursor: pointer;}
+body {
+    margin: 0px;
+    background-image: url("image/Background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*Main*/
+#MainDiv {
+    width: 100%;
+    height: calc(100vw * 740 / 1080);
+    background-image: url("image/MainBackground.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#MainDivText {
+    color: white;
+}
+#MainTitle {
+    
+    font-size: 32px;
+    margin-bottom: 1px;
+}
+#MainInfo {
+    font-weight: 500;
+    margin-top: 1px;
+    font-size: 12px;
+}
+/*Target*/
+#TargetDiv {
+    width: 100%;
+    height: calc(100vw * 790 / 1080);
+    background-image: url("image/TargetBackground.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#TargetDivText {
+    color: white;
+}
+#TargetTitle {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+#TargetInfo {
+    font-size: 12px;
+    line-height: 20px;
+}
+/*Field*/
+#FieldDiv {
+    color: black;
+}
+#FieldTitle {
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+#FieldInfo {
+    font-size: 12px;
+    margin-top: 0px; 
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+#FieldNav {
+    justify-content: center;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.FieldNavBtn {
+    background: none;
+    outline: none;
+    border: none;
+    width: 16%;
+}
+.FieldNavBtnImg {
+    width: 100%;
+    margin-bottom: 28px;
+}
+.FieldNavBtnImg2 {
+    width: 110%;
+    margin-bottom: 28px;
+}
+/*Field/Card*/
+.FieldCard {
+    background-color: white;
+    width: 80%;
+    height: 80vw;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FieldCardImg {
+    background: none;
+    width: 24%;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+.FieldCardTitle {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.FieldCardInfo {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.FieldCardBtn {
+    background-color: #3498db;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    margin-top: 0px;
+}
+/*Support*/
+#SupportDiv {
+    background-color: #3498db;
+    width: 100%;
+    height: calc(100vw * 640 / 1080);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#SupportTitle {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+#SupportInfo {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.SupportBtn {
+    background-color: white;
+    color: #3498db;
+    outline: none;
+    border: none;
+    width: 140px;
+    height: 36px;
+    border-radius: 18px;
+    margin-top: 0px;
+}
